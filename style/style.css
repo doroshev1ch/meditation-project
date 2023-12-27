@@ -107,19 +107,19 @@ img {
 }
 @font-face {
     font-family: Albert-light;
-    src: url(../assets/fonts/AlbertSans-Light.ttf);
+    src: url(./assets/fonts/AlbertSans-Light.ttf);
 }
 @font-face {
     font-family: Albert-lightItalic;
-    src: url(../assets/fonts/AlbertSans-LightItalic.ttf);
+    src: url(./assets/fonts/AlbertSans-LightItalic.ttf);
 }
 @font-face {
     font-family: Albert-Medium;
-    src: url(../assets/fonts/AlbertSans-Medium.ttf);
+    src: url(./assets/fonts/AlbertSans-Medium.ttf);
 }
 @font-face {
     font-family: Albert-MediumItalic;
-    src: url(../assets/fonts/AlbertSans-MediumItalic.ttf);
+    src: url(./assets/fonts/AlbertSans-MediumItalic.ttf);
 }
 @keyframes breath {
     25%, 50% {
