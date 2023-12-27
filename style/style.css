@@ -20,6 +20,9 @@ a {
 img {
     object-fit: cover;
 }
+/* section {
+    height: 100vh;
+} */
 .container {
     margin: 20px;
 }
@@ -54,6 +57,9 @@ img {
     margin: 30px 0 30px;
     background-color:  rgba(125, 125, 158, 0.823);
 }
+.focused-text {
+    padding-bottom: 20px;
+}
 .focused-breathing {
     background-color: var(--primary-color);
     width: var(--small);
@@ -67,10 +73,18 @@ img {
     flex-direction: column;
     align-items: center;
 }
+.meditation-tittle {
+    padding-bottom: 40px;
+}
 .slider-wrapper {
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-bottom: 40px;
+}
+.slide:hover {
+    cursor: pointer;
+    opacity: 1;
 }
 .slide {
     display: flex;
@@ -78,14 +92,33 @@ img {
     align-items: center;
     justify-content: center;
     width: 70%;
-    height: 90vh;
+    height: auto;
     border-radius: 40px;
     background-color: rgba(213, 218, 223, 0.561);
+    opacity: 0.8;
+    transition: opacity 1s ease 0s;
 }
 .slide-img {
     border-radius: 40px;
-    height: 500px;
+    height: 50vh;
     width: 100%;
+}
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+/* .icon {
+    width: 50px;
+    height: 50px;
+    margin: 0px 5px;
+} */
+.right-column, .left-column {
+    display: flex;
+    flex-direction: column;
+}
+.contact-link {
+    display: flex;
+    align-items: center;
 }
 @media (max-width: 768px) {
     body {
@@ -107,19 +140,19 @@ img {
 }
 @font-face {
     font-family: Albert-light;
-    src: url(./assets/fonts/AlbertSans-Light.ttf);
+    src: url(../assets/fonts/AlbertSans-Light.ttf);
 }
 @font-face {
     font-family: Albert-lightItalic;
-    src: url(./assets/fonts/AlbertSans-LightItalic.ttf);
+    src: url(../assets/fonts/AlbertSans-LightItalic.ttf);
 }
 @font-face {
     font-family: Albert-Medium;
-    src: url(./assets/fonts/AlbertSans-Medium.ttf);
+    src: url(../assets/fonts/AlbertSans-Medium.ttf);
 }
 @font-face {
     font-family: Albert-MediumItalic;
-    src: url(./assets/fonts/AlbertSans-MediumItalic.ttf);
+    src: url(../assets/fonts/AlbertSans-MediumItalic.ttf);
 }
 @keyframes breath {
     25%, 50% {
@@ -128,4 +161,49 @@ img {
        height: var(--large);
        border-radius: calc( var(--large) / 2);
     }   
-   }
+}
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
