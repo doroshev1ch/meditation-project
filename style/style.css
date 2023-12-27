@@ -7,6 +7,7 @@ body {
     background-color: lavender;
     font-family: Albert-light;
     font-size: 1.3rem;
+    margin: 20px;
 }
 h1 {
     font-size: 2.5rem;
@@ -24,9 +25,6 @@ img {
 /* section {
     height: 100vh;
 } */
-.container {
-    margin: 20px;
-}
 .italic {
     font-family: Albert-MediumItalic;
     color: rgba(77, 77, 99, 0.968);
@@ -34,12 +32,22 @@ img {
 .tittle {
     color: rgba(77, 77, 99, 0.968);
 }
+header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(230, 230, 250, 0.889);
+}
 .nav-list {
-    padding: 0;
+    padding: 0px 10px;
     display: flex;
     justify-content: space-between;
+    height: auto;
 }
 .preview {
+    margin-top: 50px;
     height: 100vh;
     display: flex;
     flex-direction: column;
