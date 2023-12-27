@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation</title>
+    <!-- <link rel="stylesheet" type="text/css" href="node_modules/normalize.css/normalize.css" media="all"> -->
+    <link rel="stylesheet" type="text/css" href="style/style.css" media="all">
+
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <!-- <link rel="icon" href="../coffee-house/assets/img/coffee-cup.svg" type="image/x-icon"> -->
+</head>
+<body>
+    <header class="container header-container">
+        <div class="nav-wrapper">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Practices">Practices</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Contact">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container main-container">
+        <section class="preview">
+            <div class="preview-block">
+                <h1 class="preview-tittle"><span class="tittle">Meditation spase</span></h1>
+                <p class="preview-text">This is a platform for your relaxation from the daily hustle and bustle. Relaxation and relief of mental stress is available at any time of the day or night.<br>The platform is a test object that we would like to develop in the future<span class="italic">Join and welcome!</span></p>
+                <a class="join-button" href="#practics">Join</a>
+            </div>
+            <p>Breath in through the nose as the circle expands <br>
+                hold, and release through the mouth as it contracts. <br> repeat as needed.</p>
+            <div class="focused-breathing"></div>
+        </section>
+        <section class="practics">
+            <h2 class="meditation-tittle">Choose your mood</h2>
+            <div class="slider-wrapper">
+                <div class="slide Stress-slide">
+                    <img class="slide-img" src="/assets/image/IMG_0116.JPG" alt="stress">
+                    <h3 class="slide-tittle">Stress</h3>
+                    <p class="slide-text">Calm Down</p>
+                </div>
+                <div class="slide Sleep-slide">
+                    <img class="slide-img" src="/assets/image/IMG_0118.JPG" alt="stress">
+                    <h3 class="slide-tittle">Sleep</h3>
+                    <p class="slide-text">Sleep tight</p>
+                </div>
+                <div class="slide Focus-slide">
+                    <img class="slide-img" src="/assets/image/IMG_0119.JPG" alt="stress">
+                    <h3 class="slide-tittle">Focus</h3>
+                    <p class="slide-text">Be in the moment</p>
+                </div>
+                <div class="slide Balance-slide">
+                    <img class="slide-img" src="/assets/image/IMG_0115.JPG" alt="stress">
+                    <h3 class="slide-tittle">Balance</h3>
+                    <p class="slide-text">Find a balance</p>
+                </div>
+            </div>
+        </section>
+        <section class=""></section>
+        <section class=""></section>
+    </main>
+    <footer class="container main-container"></footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider-wrapper').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+            });
+        });
+    </script>
+</body>
+</html>

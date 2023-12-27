@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: rgb(32, 31, 31);
+}
+body {
+    font-family: Albert-light;
+    font-size: 1.3rem;
+}
+h1 {
+    font-size: 2.5rem;
+    font-family: Albert-Medium;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    object-fit: cover;
+}
+.container {
+    margin: 20px;
+}
+.italic {
+    font-family: Albert-MediumItalic;
+    color: rgba(77, 77, 99, 0.968);
+}
+.tittle {
+    color: rgba(77, 77, 99, 0.968);
+}
+.nav-list {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.preview {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.preview-block {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.join-button {
+    width: min-content;
+    cursor: pointer;
+    border-radius: 40px;
+    padding: 10px 30px;
+    margin: 30px 0 30px;
+    background-color:  rgba(125, 125, 158, 0.823);
+}
+.focused-breathing {
+    background-color: var(--primary-color);
+    width: var(--small);
+    height: var(--small);
+    border-radius: calc( var(--small) / 2);
+    animation: breath var(--timing) ease infinite none running;
+    display: inline-block;
+}
+.practics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 90vh;
+    border-radius: 40px;
+    background-color: rgba(213, 218, 223, 0.561);
+}
+.slide-img {
+    border-radius: 40px;
+    height: 500px;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .preview-block {
+        width: 100%;
+    }
+}
+:root {
+    --primary-color: lightsteelblue;
+    --secondary-color: rgba(125, 125, 158, 0.823);
+    --large: 200px;
+    --small: 10px;
+    --timing: 8s;
+}
+@font-face {
+    font-family: Albert-light;
+    src: url(/assets/fonts/AlbertSans-Light.ttf);
+}
+@font-face {
+    font-family: Albert-lightItalic;
+    src: url(/assets/fonts/AlbertSans-LightItalic.ttf);
+}
+@font-face {
+    font-family: Albert-Medium;
+    src: url(/assets/fonts/AlbertSans-Medium.ttf);
+}
+@font-face {
+    font-family: Albert-MediumItalic;
+    src: url(/assets/fonts/AlbertSans-MediumItalic.ttf);
+}
+@keyframes breath {
+    25%, 50% {
+       background-color: var(--secondary-color);
+       width: var(--large);
+       height: var(--large);
+       border-radius: calc( var(--large) / 2);
+    }   
+   }
